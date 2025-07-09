@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Perfis</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <h1>Seus Perfis</h1>
+            <p>Clique em um perfil para ver os detalhes ou editar.</p>
+            <button id="add-new-profile-button" class="button primary-button">Cadastrar Novo Perfil</button>
+        </header>
+
+        <section class="profile-list">
+            <div id="profiles-container" class="grid-container">
+                <p id="loading-message">Carregando perfis...</p>
+                <p id="no-profiles-message" class="hidden">Nenhum perfil encontrado. <a href="index.html">Cadastre o primeiro!</a></p>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

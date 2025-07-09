@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Perfil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="profile-header">
+            <div class="profile-image-container">
+                <img src="https://via.placeholder.com/150" alt="Imagem de Perfil" id="profile-image">
+                <input type="file" id="upload-image" accept="image/*" style="display: none;">
+            </div>
+            <h1 id="profile-name">Carregando Nome...</h1>
+        </header>
+
+        <section class="profile-info" id="display-profile-section">
+            <h2>Suas Informações</h2>
+            <div class="info-item">
+                <strong>Nome Completo:</strong> <span id="display-name"></span>
+            </div>
+            <div class="info-item">
+                <strong>Email:</strong> <span id="display-email"></span>
+            </div>
+            <div class="info-item">
+                <strong>Idade:</strong> <span id="display-age"></span>
+            </div>
+            <div class="info-item">
+                <strong>Endereço:</strong> <span id="display-address"></span>
+            </div>
+            <div class="info-item bio-item">
+                <strong>Biografia:</strong>
+                <p id="display-biografia"></p>
+            </div>
+            <div class="profile-actions">
+                <button id="edit-button" class="button-primary-buttonEdit">Editar Perfil</button>
+                <button id="delete-button" class="button-danger-buttonExcluir">Excluir Perfil</button>
+            </div>
+            <a href="list.html" class="button-secondary-button-back-buttonVoltar">Voltar para a lista</a>
+        </section>
+
+        <section class="edit-form hidden" id="edit-profile-section">
+            <h2>Editar Perfil</h2>
+            <form id="profile-form">
+                <div class="form-group">
+                    <label for="name-edit">Nome Completo:</label>
+                    <input type="text" id="name-edit" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="password-edit">Senha:</label>
+                    <input type="password" id="password-edit" name="password">
+                    <small>Deixe em branco para não alterar a senha.</small>
+                </div>
+                <div class="form-group">
+                    <label for="age-edit">Idade:</label>
+                    <input type="number" id="age-edit" name="idade" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="street-edit">Rua:</label>
+                    <input type="text" id="street-edit" name="rua" required>
+                </div>
+                <div class="form-group">
+                    <label for="neighborhood-edit">Bairro:</label>
+                    <input type="text" id="neighborhood-edit" name="bairro" required>
+                </div>
+                <div class="form-group">
+                    <label for="state-edit">Estado:</label>
+                    <input type="text" id="state-edit" name="estado" required>
+                </div>
+                <div class="form-group">
+                    <label for="biografia-edit">Biografia:</label>
+                    <textarea id="biografia-edit" name="biografia" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="imagem_perfil-edit-file">Selecione uma nova Imagem de Perfil (Opcional):</label>
+                    <input type="file" id="imagem_perfil-edit-file" name="imagem_perfil" accept="image/*">
+                    <small>A imagem atual será mantida se nenhuma nova for selecionada.</small>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="button primary-button">Salvar Alterações</button>
+                    <button type="button" id="cancel-button" class="button secondary-button">Cancelar</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
