@@ -40,6 +40,7 @@ Este projeto é um sistema completo de gerenciamento de perfis de usuários. Ele
 ### 📦 Pré-requisitos:
 - Node.js instalado
 - Navegador moderno
+- Utilize o XAMPP para ligar o servidor MySQL
 
 ### 💾 Instalação do Backend
 
