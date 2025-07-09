@@ -13,10 +13,7 @@ const __dirname = path.dirname(__filename);
 const prisma = new PrismaClient();
 const app = express();
 
-app.use(cors({
-    origin: 'https://perfil-de-usuario-kjgw.vercel.app/'
-
-}));
+app.use(cors());
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
 

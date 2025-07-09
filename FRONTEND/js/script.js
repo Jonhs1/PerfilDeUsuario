@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
  
-    const API_URL = 'https://backend-i0vs.onrender.com';
+    const API_URL = 'http://localhost:3000';
 
 
     function getUrlParameter(name) {
